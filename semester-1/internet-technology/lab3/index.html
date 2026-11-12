@@ -1,0 +1,445 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Облака и соцсети: куда движутся Интернет-технологии — лонгрид</title>
+<meta name="description" content="Лонгрид по дисциплине «Интернет-технологии»: облачные вычисления как фундамент Web 3.0 и их роль в развитии социальных сетей.">
+<meta name="author" content="Мираз Абдулла, ИДМ-26-08, МГТУ «СТАНКИН»">
+<meta property="og:title" content="Облака и соцсети: куда движутся Интернет-технологии">
+<meta property="og:type" content="article">
+<meta name="theme-color" content="#fafafa" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#111113" media="(prefers-color-scheme: dark)">
+<link rel="preload" href="assets/fonts/geist-cyrillic.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/fonts.css">
+<link rel="stylesheet" href="assets/style.css">
+<link rel="preload" href="assets/img/datacenter-cern.webp" as="image">
+</head>
+<body>
+<div id="progress"></div>
+
+<header class="topbar">
+  <a class="brand" href="#top">Облака<span>/</span>соцсети</a>
+  <button class="toc-toggle" aria-controls="toc" aria-expanded="false">Содержание</button>
+  <span class="now">Введение</span>
+  <span class="spacer"></span>
+</header>
+
+<section class="hero" id="top">
+  <div class="hero-inner">
+    <div class="hero-text">
+      <p class="kicker">Лонгрид по дисциплине «Интернет-технологии»</p>
+      <h1><span class="line"><span>Облака и соцсети:</span></span><span class="line"><span>куда движутся</span></span><span class="line"><span>Интернет-технологии</span></span></h1>
+      <p class="lead">Почему облачные вычисления стали фундаментом Web&nbsp;3.0 и как они меняют социальные сети.</p>
+      <a class="cta" href="#intro">Читать <span aria-hidden="true">↓</span></a>
+    </div>
+    <div class="hero-photo">
+      <div class="frame"><img src="assets/img/datacenter-cern.webp" alt="Ряды серверных стоек в центре обработки данных CERN" width="1600" height="1067" fetchpriority="high"></div>
+      <p class="photo-credit">ЦОД CERN. Фото: <a href="https://commons.wikimedia.org/wiki/File:CERN_Server_03.jpg" target="_blank" rel="noopener">Florian Hirzinger</a>, CC BY-SA 3.0</p>
+    </div>
+  </div>
+</section>
+
+<div class="byline">
+  <div class="byline-in">
+    <div>Автор<b>Мираз Абдулла, ИДМ-26-08</b></div>
+    <div>Преподаватель<b>Снопок К.А.</b></div>
+    <div>Чтение<b>≈ 25 минут</b></div>
+    <div>МГТУ «СТАНКИН»<b>Москва, 2026</b></div>
+  </div>
+</div>
+
+<div class="layout">
+<nav class="toc" id="toc" aria-label="Содержание">
+  <h2>Содержание</h2>
+  <ol>
+    <li><a href="#intro">1. Введение</a>
+      <ol>
+        <li><a href="#context">1.1 Технологический и социальный контекст</a></li>
+        <li><a href="#digital-economy">1.2 Цифровая экономика</a></li>
+        <li><a href="#industry40">1.3 Индустрия 4.0</a></li>
+        <li><a href="#web3">1.4 Концепция Web 3.0</a></li>
+      </ol>
+    </li>
+    <li><a href="#cloud">2. Облачные вычисления</a>
+      <ol>
+        <li><a href="#trends">2.1 Тренды Web 3.0</a></li>
+        <li><a href="#definition">2.2 Понятие и характеристики</a></li>
+        <li><a href="#models">2.3 Модели обслуживания</a></li>
+        <li><a href="#directions">2.4 Направления развития</a></li>
+        <li><a href="#market">2.5 Рынок</a></li>
+        <li><a href="#decentral">2.6 Облако и децентрализация</a></li>
+      </ol>
+    </li>
+    <li><a href="#social">3. Социальные сети</a>
+      <ol>
+        <li><a href="#industry">3.1 Состояние отрасли</a></li>
+        <li><a href="#architecture">3.2 Облачная инфраструктура</a></li>
+        <li><a href="#fediverse">3.3 Децентрализованные сети</a></li>
+        <li><a href="#other-tech">3.4 ИИ и другие технологии</a></li>
+        <li><a href="#impact">3.5 Что окажет наибольшее влияние</a></li>
+      </ol>
+    </li>
+    <li><a href="#conclusion">4. Выводы</a></li>
+    <li><a href="#library">Исследования, статьи, кейсы</a></li>
+    <li><a href="#refs">Список источников</a></li>
+  </ol>
+</nav>
+
+<article>
+
+<!-- ================================================================ 1 -->
+<section id="intro">
+<h2><span class="num">1</span>Введение <a class="anchor" href="#intro" aria-label="Ссылка на раздел">#</a></h2>
+
+<h3 id="context">1.1 Технологический и социальный контекст <a class="anchor" href="#context">#</a></h3>
+<p class="dropcap">Инфокоммуникационные технологии (ИКТ) объединяют средства сбора, обработки, хранения и передачи информации: вычислительную технику, сети связи, центры обработки данных и программное обеспечение. Интернет-технологии (ИТ)&nbsp;— часть ИКТ, основанная на стеке протоколов TCP/IP и веб-стандартах. Сегодня ИКТ в целом и ИТ в частности являются базовой инфраструктурой экономики и общественной жизни, а не отдельной отраслью.</p>
+
+<div class="stats">
+  <div class="stat"><div class="value" data-to="68" data-suffix=" %">0 %</div><div class="label">населения Земли пользовались интернетом в начале 2025&nbsp;г.<a class="cite" href="#ref-22">[22]</a></div></div>
+  <div class="stat"><div class="value" data-to="5.79" data-dec="2" data-suffix=" млрд">0</div><div class="label">идентификаторов пользователей соцсетей в апреле 2026&nbsp;г.<a class="cite" href="#ref-24">[24]</a></div></div>
+  <div class="stat"><div class="value" data-to="107" data-suffix=" млрд $">0</div><div class="label">выручка мирового рынка облачной инфраструктуры за III кв. 2025&nbsp;г.<a class="cite" href="#ref-19">[19]</a></div></div>
+</div>
+
+<p>В технологическом плане современные ИТ определяются несколькими одновременными сдвигами. Первый&nbsp;— переход вычислений в облака и на границу сети: приложения проектируются сразу как распределённые облачные сервисы<a class="cite" href="#ref-7">[7]</a><a class="cite" href="#ref-8">[8]</a>. Второй&nbsp;— массовое внедрение искусственного интеллекта, прежде всего больших языковых моделей, которые требуют огромных вычислительных мощностей и тем самым ускоряют рост облачного рынка<a class="cite" href="#ref-19">[19]</a>. Третий&nbsp;— повсеместная связность: сети 5G, Интернет вещей и граничные вычисления<a class="cite" href="#ref-9">[9]</a>. Четвёртый&nbsp;— поиск альтернатив централизованным платформам: блокчейн, децентрализованные хранилища и федеративные протоколы<a class="cite" href="#ref-11">[11]</a><a class="cite" href="#ref-14">[14]</a><a class="cite" href="#ref-15">[15]</a>.</p>
+<p>В социальном плане интернет стал основной средой коммуникации, образования, работы и потребления. Вместе с этим выросла значимость вопросов приватности, информационной безопасности, цифрового неравенства и «цифрового суверенитета» государств. В России правовую основу отрасли задают Федеральный закон №&nbsp;149-ФЗ «Об информации, информационных технологиях и о защите информации»<a class="cite" href="#ref-1">[1]</a> и Федеральный закон №&nbsp;152-ФЗ «О персональных данных», который требует хранить персональные данные граждан РФ на территории страны<a class="cite" href="#ref-2">[2]</a>.</p>
+
+<h3 id="digital-economy">1.2 Цифровая экономика и цифровизация критически важных процессов <a class="anchor" href="#digital-economy">#</a></h3>
+<p>Под цифровой экономикой понимают хозяйственную деятельность, в которой ключевым фактором производства выступают данные в цифровом виде, а их обработка и анализ повышают эффективность производства, хранения и доставки товаров и услуг. В России этот курс закреплён программой «Цифровая экономика Российской Федерации» (2017)<a class="cite" href="#ref-4">[4]</a>, затем одноимённым национальным проектом, а с 2025&nbsp;года&nbsp;— национальным проектом «Экономика данных и цифровая трансформация государства». Указ Президента РФ №&nbsp;309 от 07.05.2024 относит цифровую трансформацию управления, экономики и социальной сферы к национальным целям развития до 2030&nbsp;года<a class="cite" href="#ref-3">[3]</a>.</p>
+<p>Цифровизации подлежат прежде всего критически важные процессы: государственные услуги, финансы и платежи, здравоохранение, энергетика, транспорт, связь и промышленность. Роль ИТ в них:</p>
+<ul>
+  <li>обеспечить сбор, передачу и хранение данных (сети связи, ЦОД, облака);</li>
+  <li>перевести взаимодействие с гражданами и бизнесом в онлайн (порталы, мобильные приложения, цифровые удостоверения личности);</li>
+  <li>автоматизировать принятие решений с помощью аналитики и ИИ;</li>
+  <li>обеспечить доверие и безопасность (криптография, электронная подпись, отечественные программные платформы).</li>
+</ul>
+
+<h3 id="industry40">1.3 Концепция «Индустрия 4.0» <a class="anchor" href="#industry40">#</a></h3>
+<p>Термин «Индустрия 4.0» появился в Германии в 2011&nbsp;году и описывает четвёртую промышленную революцию&nbsp;— объединение физических производственных систем с цифровыми в киберфизические системы<a class="cite" href="#ref-13">[13]</a>.</p>
+<blockquote class="pull reveal">Четвёртая промышленная революция отличается от предыдущих скоростью, масштабом и системным характером изменений: она затрагивает не отдельные отрасли, а экономику и общество в целом.<cite>— по книге К. Шваба «Четвёртая промышленная революция»<a class="cite" href="#ref-12">[12]</a></cite></blockquote>
+<p>Наиболее перспективные ИТ в рамках Индустрии&nbsp;4.0: промышленный Интернет вещей (IIoT); облачные и граничные вычисления для обработки потоков данных с оборудования; цифровые двойники; большие данные и предиктивная аналитика; ИИ и машинное зрение; аддитивные технологии; сети 5G и частные промышленные сети; средства кибербезопасности промышленных систем. Социальная сторона Индустрии&nbsp;4.0&nbsp;— изменение характера труда: автоматизация рутинных операций, рост спроса на цифровые компетенции и постоянная переподготовка кадров.</p>
+
+<h3 id="web3">1.4 Концепция «Web 3.0» <a class="anchor" href="#web3">#</a></h3>
+<p>Под Web&nbsp;3.0 понимают следующий этап развития Всемирной паутины. У термина два исторических значения: в понимании Т.&nbsp;Бернерса-Ли это семантическая паутина, где данные машиночитаемы и связаны между собой<a class="cite" href="#ref-10">[10]</a>, а в понимании Г.&nbsp;Вуда (2014)&nbsp;— децентрализованный веб, в котором пользователь сам владеет своими данными и цифровыми активами, а доверие обеспечивается криптографией, а не посредниками<a class="cite" href="#ref-11">[11]</a>. Переключайте вкладки, чтобы сравнить этапы:</p>
+
+<div class="tabs reveal" role="tablist">
+  <div class="tab-buttons">
+    <button role="tab" aria-selected="false" aria-controls="tab-w1">Web 1.0</button>
+    <button role="tab" aria-selected="false" aria-controls="tab-w2">Web 2.0</button>
+    <button role="tab" aria-selected="true" aria-controls="tab-w3">Web 3.0</button>
+  </div>
+  <div class="tab-panel" id="tab-w1" hidden><div class="era">1990-е — начало 2000-х</div><h4>«Чтение»</h4>Статичные HTML-страницы, порталы и каталоги. Контент создают владельцы сайтов, пользователь только читает.</div>
+  <div class="tab-panel" id="tab-w2" hidden><div class="era">с 2004 г. по настоящее время</div><h4>«Чтение и запись»</h4>Социальные сети, блоги, пользовательский контент, мобильные приложения и облака. Пользователи создают контент, но данные принадлежат платформам.</div>
+  <div class="tab-panel" id="tab-w3"><div class="era">формируется</div><h4>«Чтение, запись, владение»</h4>Семантика, ИИ, блокчейн, децентрализованные хранилища и протоколы, XR, IoT и граничные вычисления. Пользователь контролирует свои данные и идентичность.</div>
+</div>
+
+<p>К социальным трендам Web&nbsp;3.0 можно отнести стремление пользователей владеть своими данными, снижение доверия к крупным платформам-посредникам, развитие экономики авторов контента (creator economy) и новые формы коллективного управления сообществами (DAO).</p>
+</section>
+
+<!-- ================================================================ 2 -->
+<section id="cloud">
+<h2><span class="num">2</span>Ключевые направления развития ИТ в концепции «Web 3.0». Облачные вычисления <a class="anchor" href="#cloud">#</a></h2>
+
+<h3 id="trends">2.1 Обзор технологических трендов Web 3.0 <a class="anchor" href="#trends">#</a></h3>
+<p>Ключевые тренды Web&nbsp;3.0: семантический веб; ИИ и машинное обучение; блокчейн, токенизация и DeFi; DApps и DAO; децентрализованное хранение данных; облачные и граничные вычисления; метавселенные и VR/AR/MR; повсеместная связность и IoT. Ни одна из этих технологий не существует изолированно. ИИ требует масштабируемых вычислений и больших объёмов данных. Блокчейн-сети и DApps нуждаются в узлах, которые где-то размещаются. Метавселенные и XR предъявляют жёсткие требования к задержкам, что решается граничными вычислениями. Поэтому облачные вычисления&nbsp;— это инфраструктурный фундамент, на котором развиваются остальные тренды.</p>
+
+<figure class="wide reveal">
+  <img src="assets/img/servers-wikimedia.webp" alt="Серверы Фонда Викимедиа в стойках с подсветкой" loading="lazy">
+  <figcaption><b>Рисунок 1.</b> Серверы Фонда Викимедиа: один из крупнейших сайтов мира работает на распределённой инфраструктуре из нескольких ЦОД. Фото: <a href="https://commons.wikimedia.org/wiki/File:Wikimedia_Foundation_Servers-8055_35.jpg" target="_blank" rel="noopener">Victor Grigas</a>, CC BY-SA 3.0</figcaption>
+</figure>
+
+<h3 id="definition">2.2 Понятие и характеристики облачных вычислений <a class="anchor" href="#definition">#</a></h3>
+<p>Согласно ГОСТ ISO/IEC 17788-2016, облачные вычисления&nbsp;— это парадигма обеспечения сетевого доступа к масштабируемому и эластичному пулу общих физических или виртуальных ресурсов с самообслуживанием и администрированием по требованию<a class="cite" href="#ref-5">[5]</a>. Близкое определение даёт американский институт NIST<a class="cite" href="#ref-6">[6]</a>. Оба документа выделяют ключевые характеристики облачной модели:</p>
+<ul>
+  <li><b>самообслуживание по требованию</b>&nbsp;— потребитель сам получает ресурсы без участия персонала провайдера;</li>
+  <li><b>широкий сетевой доступ</b>&nbsp;— ресурсы доступны по сети со стандартных устройств;</li>
+  <li><b>объединение ресурсов в пул</b>&nbsp;— ресурсы динамически распределяются между многими арендаторами;</li>
+  <li><b>быстрая эластичность</b>&nbsp;— ресурсы автоматически наращиваются и освобождаются в зависимости от нагрузки;</li>
+  <li><b>измеряемая услуга</b>&nbsp;— клиент платит только за фактически использованные ресурсы.</li>
+</ul>
+<p>М.&nbsp;Армбруст и соавторы указывают на три принципиальные новинки облака: иллюзию бесконечных ресурсов, отсутствие крупных первоначальных вложений и возможность платить за ресурсы на короткий срок<a class="cite" href="#ref-7">[7]</a>. Тем самым капитальные затраты на ИТ-инфраструктуру превращаются в операционные.</p>
+
+<h3 id="models">2.3 Модели обслуживания и развёртывания <a class="anchor" href="#models">#</a></h3>
+<p>Модели обслуживания различаются тем, где проходит граница ответственности между провайдером и клиентом. Выберите модель и посмотрите, какие уровни остаются за клиентом:</p>
+
+<div class="models reveal">
+  <div class="model-switch">
+    <button data-model="onprem">Собственный ЦОД</button>
+    <button data-model="iaas">IaaS</button>
+    <button data-model="paas">PaaS</button>
+    <button data-model="saas">SaaS</button>
+  </div>
+  <div class="stack">
+    <div class="layer"><span>Данные и права доступа</span><span class="who"></span></div>
+    <div class="layer"><span>Приложения</span><span class="who"></span></div>
+    <div class="layer"><span>Среда выполнения</span><span class="who"></span></div>
+    <div class="layer"><span>Операционная система</span><span class="who"></span></div>
+    <div class="layer"><span>Виртуализация</span><span class="who"></span></div>
+    <div class="layer"><span>Серверы, сеть, хранилища</span><span class="who"></span></div>
+  </div>
+  <div class="model-desc"></div>
+  <div class="src" style="font-size:13px;color:var(--muted);margin-top:8px">Рисунок 2. Разделение ответственности в моделях облака (составлено автором по <a class="cite" href="#ref-5">[5]</a><a class="cite" href="#ref-6">[6]</a>)</div>
+</div>
+
+<div class="media reveal">
+  <div class="frame"><iframe src="https://rutube.ru/play/embed/324ce54562372adbeb9a1fd08d76c270" title="Облачные сервисы и провайдеры. Что это такое - IaaS, PaaS, SaaS" loading="lazy" allow="clipboard-write; autoplay" allowfullscreen></iframe></div>
+  <div class="cap"><span class="tag rutube">RUTUBE</span><b>Видео: «Облачные сервисы и провайдеры. Что это такое&nbsp;— IaaS, PaaS, SaaS»</b> (канал «Slider», 4:44). Короткое объяснение трёх моделей обслуживания на бытовых примерах.</div>
+</div>
+
+<p>По модели развёртывания различают публичное облако (ресурсы провайдера доступны широкому кругу клиентов), частное облако (инфраструктура одной организации), общественное облако (для группы организаций с общими требованиями) и гибридное облако, сочетающее несколько моделей. Сегодня типична мультиоблачная стратегия: компания использует сервисы нескольких провайдеров, чтобы снизить зависимость от одного поставщика и выполнить требования регуляторов.</p>
+
+<h3 id="directions">2.4 Современные направления развития облачных технологий <a class="anchor" href="#directions">#</a></h3>
+<p><b>Облачно-нативная (cloud-native) архитектура.</b> Приложения строятся из микросервисов, упакованных в контейнеры и управляемых оркестратором Kubernetes. Инфраструктура описывается кодом (Infrastructure as Code), а изменения выпускаются непрерывно (CI/CD). Это позволяет масштабировать отдельные функции системы независимо друг от друга.</p>
+<p><b>Бессерверные вычисления (serverless).</b> Разработчик загружает функции (FaaS) и пользуется управляемыми сервисами, а провайдер сам выделяет ресурсы под каждый запрос. Исследователи из Беркли считают serverless следующим этапом облачного программирования: оплата идёт за фактическое время выполнения, а масштабирование, включая сокращение до нуля, происходит автоматически<a class="cite" href="#ref-8">[8]</a>.</p>
+
+<div class="media reveal">
+  <div class="cap"><span class="tag audio">Подкаст</span><b>Послушайте инженеров Yandex Cloud</b>: подкаст «Как мы делаем Yandex Cloud» рассказывает, как устроены сервисы облака изнутри. Сейчас играет: <b id="ep-title">Serverless. Сергей Ненашев</b></div>
+  <div class="audio-box">
+    <audio id="podcast" controls preload="none" src="https://api.mave.digital/storage/podcasts/17f9d7ec-9df1-426f-96bf-a44e80a6f12f/episodes/754f6700-7e84-4d52-81ed-49eabcd29507.mp3"></audio>
+    <div class="episodes">
+      <button class="on" data-title="Serverless. Сергей Ненашев" data-src="https://api.mave.digital/storage/podcasts/17f9d7ec-9df1-426f-96bf-a44e80a6f12f/episodes/754f6700-7e84-4d52-81ed-49eabcd29507.mp3">Serverless</button>
+      <button data-title="Compute. Валентин Синицын" data-src="https://api.mave.digital/storage/podcasts/17f9d7ec-9df1-426f-96bf-a44e80a6f12f/episodes/40617161-cd85-4a9e-a726-45834afacb86.mp3">Compute (IaaS)</button>
+      <button data-title="K8s. Александр Хаустов" data-src="https://api.mave.digital/storage/podcasts/17f9d7ec-9df1-426f-96bf-a44e80a6f12f/episodes/d3f6cb41-e0ee-474a-9c6d-550294a9399e.mp3">Kubernetes</button>
+    </div>
+    <div style="font:13px var(--sans);color:var(--muted)">Источник: <a href="https://howwedoyacloud.mave.digital/" target="_blank" rel="noopener">howwedoyacloud.mave.digital</a></div>
+  </div>
+</div>
+
+<p><b>Граничные (edge) и туманные (fog) вычисления.</b> Часть обработки переносится ближе к источнику данных: на базовые станции, локальные узлы и шлюзы. Это снижает задержку и нагрузку на магистральные каналы, что критично для IoT, AR/VR и беспилотного транспорта<a class="cite" href="#ref-9">[9]</a>. Облако и граница образуют единый континуум вычислений.</p>
+<p><b>Облака для ИИ.</b> Главный драйвер рынка в 2024–2026&nbsp;гг.&nbsp;— аренда GPU-кластеров для обучения и работы нейросетей и управляемые сервисы моделей ИИ. Synergy Research Group отмечает быстрый рост специализированных «неооблачных» провайдеров GPU-мощностей: CoreWeave, Crusoe, Nebius, Lambda<a class="cite" href="#ref-19">[19]</a>.</p>
+<p><b>Суверенные облака.</b> Требования к локализации данных и санкционные риски стимулируют национальные облачные платформы. В России в 2024–2025&nbsp;гг. был высокий спрос на миграцию с зарубежных платформ на отечественные (Cloud.ru, «РТК-ЦОД», Yandex Cloud, Selectel, MWS)<a class="cite" href="#ref-20">[20]</a><a class="cite" href="#ref-21">[21]</a>.</p>
+
+<div class="media reveal">
+  <div class="frame"><iframe src="https://www.youtube-nocookie.com/embed/79IZ97Hj4jw" title="Возможности Yandex.Cloud" loading="lazy" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+  <div class="cap"><span class="tag youtube">YouTube</span><b>Вебинар «Возможности Yandex.Cloud»</b> (официальный канал Yandex Cloud). Архитектор платформы объясняет, из чего состоит облако и почему компании переносят в него свои системы.</div>
+</div>
+
+<h3 id="market">2.5 Рынок облачных вычислений <a class="anchor" href="#market">#</a></h3>
+<p>По прогнозу Gartner, мировые расходы на публичные облачные сервисы в 2025&nbsp;году должны были составить 723,4&nbsp;млрд долл. против 595,7&nbsp;млрд долл. в 2024&nbsp;году<a class="cite" href="#ref-18">[18]</a>. Выручка рынка облачной инфраструктуры в III&nbsp;квартале 2025&nbsp;года достигла 106,9&nbsp;млрд долл., причём на тройку лидеров пришлось 63&nbsp;% рынка<a class="cite" href="#ref-19">[19]</a>.</p>
+
+<div class="chart">
+  <h4>Рисунок 3. Доли провайдеров на мировом рынке облачной инфраструктуры, III кв. 2025&nbsp;г.</h4>
+  <div class="bars">
+    <div class="bar-row"><span>Amazon (AWS)</span><div class="bar-track"><div class="bar-fill" data-w="76"></div></div><span class="bar-val">29 %</span></div>
+    <div class="bar-row"><span>Microsoft (Azure)</span><div class="bar-track"><div class="bar-fill" data-w="53"></div></div><span class="bar-val">20 %</span></div>
+    <div class="bar-row"><span>Google Cloud</span><div class="bar-track"><div class="bar-fill" data-w="34"></div></div><span class="bar-val">13 %</span></div>
+    <div class="bar-row"><span>Все остальные</span><div class="bar-track"><div class="bar-fill alt" data-w="100"></div></div><span class="bar-val">38 %</span></div>
+  </div>
+  <div class="src">Источник: Synergy Research Group<a class="cite" href="#ref-19">[19]</a></div>
+</div>
+
+<p>Объём российского рынка облачных услуг, по оценке iKS-Consulting, в 2024&nbsp;году составил 322,3&nbsp;млрд руб., в 2025&nbsp;году ожидается 416,5&nbsp;млрд руб., а к 2030&nbsp;году&nbsp;— около 1,2&nbsp;трлн руб.<a class="cite" href="#ref-20">[20]</a><a class="cite" href="#ref-21">[21]</a></p>
+
+<div class="chart">
+  <h4>Рисунок 4. Российский рынок облачных услуг (IaaS + PaaS + SaaS), млрд руб.</h4>
+  <div class="bars">
+    <div class="bar-row"><span>2024</span><div class="bar-track"><div class="bar-fill" data-w="27"></div></div><span class="bar-val">322,3</span></div>
+    <div class="bar-row"><span>2025 (прогноз)</span><div class="bar-track"><div class="bar-fill" data-w="35"></div></div><span class="bar-val">416,5</span></div>
+    <div class="bar-row"><span>2030 (прогноз)</span><div class="bar-track"><div class="bar-fill warm" data-w="100"></div></div><span class="bar-val">≈ 1 200</span></div>
+  </div>
+  <div class="src">Источник: iKS-Consulting<a class="cite" href="#ref-20">[20]</a><a class="cite" href="#ref-21">[21]</a></div>
+</div>
+
+<h3 id="decentral">2.6 Облачные вычисления и децентрализация Web 3.0 <a class="anchor" href="#decentral">#</a></h3>
+<p>Между облачной моделью и идеологией Web&nbsp;3.0 есть противоречие: облако концентрирует вычисления у нескольких крупных провайдеров, а Web&nbsp;3.0 стремится к децентрализации. На практике облака остаются основным местом размещения узлов блокчейн-сетей, индексаторов, шлюзов и серверной части DApps. Параллельно развиваются децентрализованные аналоги облачных сервисов: контентно-адресуемая файловая система IPFS и сети хранения на её основе<a class="cite" href="#ref-14">[14]</a>, а также децентрализованные рынки вычислительных ресурсов.</p>
+<div class="note"><strong>Вывод раздела.</strong> Скорее всего, сложится гибридная модель: облако обеспечивает производительность и надёжность, а децентрализованные протоколы&nbsp;— переносимость данных и независимость пользователя от конкретной платформы.</div>
+</section>
+
+<!-- ================================================================ 3 -->
+<section id="social">
+<h2><span class="num">3</span>Основные области применения ИТ в концепции «Web 3.0». Социальные сети <a class="anchor" href="#social">#</a></h2>
+
+<h3 id="industry">3.1 Текущее состояние отрасли <a class="anchor" href="#industry">#</a></h3>
+<p>Социальные сети&nbsp;— одна из крупнейших и самых технологически нагруженных отраслей интернета. По данным DataReportal, число пользовательских идентификаторов в соцсетях выросло с 5,24&nbsp;млрд в январе 2025&nbsp;года до 5,79&nbsp;млрд в апреле 2026&nbsp;года, то есть почти до 70&nbsp;% населения Земли<a class="cite" href="#ref-22">[22]</a><a class="cite" href="#ref-23">[23]</a><a class="cite" href="#ref-24">[24]</a>.</p>
+
+<div class="chart">
+  <h4>Рисунок 5. Пользовательские идентификаторы соцсетей в мире, млрд</h4>
+  <div class="bars">
+    <div class="bar-row"><span>Январь 2025</span><div class="bar-track"><div class="bar-fill" data-w="90.5"></div></div><span class="bar-val">5,24</span></div>
+    <div class="bar-row"><span>Октябрь 2025</span><div class="bar-track"><div class="bar-fill" data-w="97.8"></div></div><span class="bar-val">5,66</span></div>
+    <div class="bar-row"><span>Апрель 2026</span><div class="bar-track"><div class="bar-fill warm" data-w="100"></div></div><span class="bar-val">5,79</span></div>
+  </div>
+  <div class="src">Источник: DataReportal<a class="cite" href="#ref-22">[22]</a><a class="cite" href="#ref-23">[23]</a><a class="cite" href="#ref-24">[24]</a>. Скачок в 2025&nbsp;г. отчасти связан с пересмотром методики подсчёта для Китая.</div>
+</div>
+
+<p>Основные тенденции отрасли:</p>
+<ul>
+  <li><b>приоритет видео</b>: короткие вертикальные видео и стримы вытесняют текстовые ленты и требуют огромных ресурсов на хранение, транскодирование и доставку контента;</li>
+  <li><b>алгоритмические ленты</b>: рекомендательные системы на основе машинного обучения решают, что увидит пользователь;</li>
+  <li><b>суперприложения</b>: соцсеть объединяет мессенджер, платежи, покупки и государственные сервисы;</li>
+  <li><b>регулирование и суверенизация</b>: требования к локализации данных, модерации и прозрачности алгоритмов.</li>
+</ul>
+
+<details class="case">
+  <summary>Кейс: экосистема VK и мессенджер MAX</summary>
+  <div class="body">
+    <div class="label">Практический кейс</div>
+    <p>По итогам 2025&nbsp;года средняя дневная аудитория сервисов VK составила 81,5&nbsp;млн человек. Запущенный в 2025&nbsp;году национальный мессенджер MAX к марту 2026&nbsp;года превысил 100&nbsp;млн зарегистрированных пользователей при дневной аудитории 70&nbsp;млн; в него встроены цифровой ID и сервис электронной подписи «Госключ». Просмотры товарного контента ВКонтакте за 2025&nbsp;год превысили 30&nbsp;млрд<a class="cite" href="#ref-25">[25]</a>.</p>
+    <p>Это типичная модель Web&nbsp;2.0: соцсеть превращается в централизованную платформу, совмещающую коммуникации, коммерцию и госуслуги. Источник: <a href="https://vk.company/ru/press/releases/12255/" target="_blank" rel="noopener">пресс-релиз VK</a>.</p>
+  </div>
+</details>
+
+<h3 id="architecture">3.2 Облачная инфраструктура социальных сетей <a class="anchor" href="#architecture">#</a></h3>
+<p>Социальная сеть с сотнями миллионов пользователей&nbsp;— это распределённая облачная система. Наведите курсор или нажмите на блок схемы, чтобы узнать, за что он отвечает:</p>
+
+<div class="arch reveal">
+  <div class="arch-grid">
+    <div class="arch-row r1"><div class="node" tabindex="0" data-info="Мобильные приложения, веб-версия и новые устройства (AR-очки, умные колонки). Все они обращаются к одним и тем же API.">Клиенты: приложения, веб, IoT/XR</div></div>
+    <div class="arch-row r2">
+      <div class="node" tabindex="0" data-info="Сеть доставки контента хранит копии фото и видео на серверах рядом с пользователем, поэтому лента грузится быстро из любой точки мира.">CDN и граничные узлы</div>
+      <div class="node" tabindex="0" data-info="Принимает все запросы, проверяет авторизацию, ограничивает частоту обращений и распределяет нагрузку между микросервисами.">Балансировщик и API-шлюз</div>
+    </div>
+    <div class="arch-row r4">
+      <div class="node svc" tabindex="0" data-info="Собирает ленту из публикаций друзей и рекомендованного контента; самый нагруженный сервис.">Лента и публикации</div>
+      <div class="node svc" tabindex="0" data-info="Личные сообщения, групповые чаты и звонки в реальном времени; требует малых задержек.">Сообщения и звонки</div>
+      <div class="node svc" tabindex="0" data-info="Транскодирует загруженное видео в разные разрешения и форматы, создаёт превью. Типичная задача для эластичных облачных ресурсов.">Обработка медиа</div>
+      <div class="node svc" tabindex="0" data-info="Модели машинного обучения ранжируют контент, ищут спам, ботов и запрещённые материалы.">Рекомендации и модерация (ИИ)</div>
+    </div>
+    <div class="arch-row r1"><div class="node" tabindex="0" data-info="Каждое действие (лайк, просмотр, публикация) становится событием. Брокер вроде Apache Kafka передаёт его всем заинтересованным сервисам.">Брокер событий и потоковая обработка</div></div>
+    <div class="arch-row r4">
+      <div class="node data" tabindex="0" data-info="Хранит связи «пользователь — друг — публикация». У Facebook для этого создана система TAO, обрабатывающая миллиарды чтений в секунду.">Социальный граф</div>
+      <div class="node data" tabindex="0" data-info="Петабайты фото и видео хранятся в объектном хранилище и раздаются через CDN.">Объектное хранилище медиа</div>
+      <div class="node data" tabindex="0" data-info="Кэши в оперативной памяти и key-value базы отвечают за миллисекундные ответы на частые запросы.">Кэши и key-value БД</div>
+      <div class="node data" tabindex="0" data-info="Аналитическое хранилище и GPU-кластеры, на которых обучаются рекомендательные модели.">Аналитика и GPU-кластеры</div>
+    </div>
+  </div>
+  <div class="arch-info">Выберите любой блок схемы.</div>
+  <div style="font:13px var(--sans);color:var(--muted);margin-top:8px">Рисунок 6. Обобщённая облачная архитектура крупной социальной сети (составлено автором по <a class="cite" href="#ref-17">[17]</a><a class="cite" href="#ref-8">[8]</a>)</div>
+</div>
+
+<details class="case">
+  <summary>Кейс: как Facebook хранит социальный граф (система TAO)</summary>
+  <div class="body">
+    <div class="label">Исследование / практический кейс</div>
+    <p>TAO&nbsp;— географически распределённое хранилище социального графа Facebook. Оно обрабатывает миллиарды операций чтения в секунду и оптимизировано под типичные запросы вида «объект&nbsp;— связь&nbsp;— объект»: «кто лайкнул этот пост», «друзья пользователя». Система описана в статье на конференции USENIX ATC 2013<a class="cite" href="#ref-17">[17]</a>: <a href="https://www.usenix.org/conference/atc13/technical-sessions/presentation/bronson" target="_blank" rel="noopener">читать на usenix.org</a>.</p>
+  </div>
+</details>
+
+<p>Для отрасли облака дают главное: эластичность под пиковые нагрузки (праздники, трансляции, вирусный контент), глобальную доставку медиа через CDN и граничные узлы, а также доступ к GPU-ресурсам для обучения рекомендательных моделей. Для российских платформ дополнительно важно размещать данные в отечественных ЦОД, как того требует закон о персональных данных<a class="cite" href="#ref-2">[2]</a>.</p>
+
+<h3 id="fediverse">3.3 Децентрализованные социальные сети <a class="anchor" href="#fediverse">#</a></h3>
+<p>Ответом на централизацию Web&nbsp;2.0 стали децентрализованные и федеративные социальные сети. Протокол ActivityPub, рекомендованный консорциумом W3C в 2018&nbsp;году, позволяет независимым серверам (например, сети Mastodon) обмениваться публикациями и подписками, образуя единое пространство «Fediverse»<a class="cite" href="#ref-15">[15]</a>. Протокол AT (сеть Bluesky) разделяет хранение данных пользователя, их индексацию и алгоритмы ленты: можно перенести аккаунт к другому провайдеру без потери подписчиков и выбрать сторонний алгоритм ленты<a class="cite" href="#ref-16">[16]</a>.</p>
+
+<div class="media reveal">
+  <div class="frame"><iframe src="https://www.youtube-nocookie.com/embed/44M0lg7onT0" title="Increasing Users' Data Agency: From BlueSky's AT Protocol to the Local-First Software Movement" loading="lazy" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+  <div class="cap"><span class="tag youtube">YouTube</span><b>Экспертное интервью: Мартин Клеппман о протоколе AT и local-first ПО</b> (InfoQ, англ.). Один из авторов архитектуры Bluesky объясняет, как вернуть пользователю контроль над данными.</div>
+</div>
+
+<blockquote class="pull reveal">Децентрализация здесь реализуется на уровне протоколов и идентичности, а не за счёт отказа от облаков: сами федеративные сети тоже работают на облачной инфраструктуре.<cite>— вывод автора по <a class="cite" href="#ref-16">[16]</a></cite></blockquote>
+
+<h3 id="other-tech">3.4 ИИ и другие технологии Web 3.0 в социальных сетях <a class="anchor" href="#other-tech">#</a></h3>
+<ul>
+  <li><b>ИИ и машинное обучение</b>: рекомендательные системы, автоматическая модерация, борьба со спамом и дипфейками, генеративные инструменты для авторов, ИИ-ассистенты в мессенджерах;</li>
+  <li><b>блокчейн и токенизация</b>: децентрализованная идентичность, NFT-аватары и монетизация авторов через токены; пока это нишевые решения;</li>
+  <li><b>VR/AR/MR и метавселенные</b>: AR-фильтры уже стали массовыми, а полноценные социальные пространства в VR развиваются медленнее, чем ожидалось;</li>
+  <li><b>граничные вычисления и 5G</b>: прямые трансляции и интерактивный контент с низкой задержкой;</li>
+  <li><b>семантический веб</b>: разметка контента и связанные данные для поиска и рекомендаций.</li>
+</ul>
+
+<div class="media reveal">
+  <div class="frame"><iframe src="https://rutube.ru/play/embed/5d0601a14007deacea098a5c90071f78" title="Как работает алгоритм рекомендаций Рутуб" loading="lazy" allow="clipboard-write; autoplay" allowfullscreen></iframe></div>
+  <div class="cap"><span class="tag rutube">RUTUBE</span><b>Видео: «Как работает алгоритм рекомендаций Рутуб»</b> (8:54). Практический разбор того, какие сигналы учитывает рекомендательная система видеоплатформы.</div>
+</div>
+
+<h3 id="impact">3.5 Технологии, которые окажут наибольшее влияние на отрасль <a class="anchor" href="#impact">#</a></h3>
+<p>По мнению автора, наибольшее влияние на развитие социальных сетей окажут следующие ИТ:</p>
+<ol class="rank">
+  <li><b>Облачные и граничные вычисления.</b> Без эластичной облачной инфраструктуры невозможно обслуживать миллиарды пользователей и быстро растущий объём видео. Рост облачного рынка на 20–30&nbsp;% в год<a class="cite" href="#ref-19">[19]</a><a class="cite" href="#ref-20">[20]</a> во многом обеспечен именно медиа- и ИИ-нагрузками.</li>
+  <li><b>Искусственный интеллект.</b> Рекомендательные алгоритмы определяют конкурентоспособность платформы, а генеративный ИИ меняет сам процесс создания контента. При этом ИИ полностью зависит от облачных GPU-мощностей.</li>
+  <li><b>Децентрализованные протоколы и идентичность.</b> Федеративные сети пока уступают крупнейшим платформам по аудитории, но задают новый стандарт переносимости данных и прозрачности алгоритмов.</li>
+</ol>
+<p>Блокчейн-токены и метавселенные, по мнению автора, в ближайшие годы останутся дополнительными функциями, а не основой отрасли: у них сложный пользовательский опыт и неясная бизнес-модель.</p>
+</section>
+
+<!-- ================================================================ 4 -->
+<section id="conclusion">
+<h2><span class="num">4</span>Заключение и основные выводы <a class="anchor" href="#conclusion">#</a></h2>
+<p>В работе рассмотрено современное состояние Интернет-технологий, понятия цифровой экономики, Индустрии&nbsp;4.0 и Web&nbsp;3.0. Web&nbsp;3.0 представляет собой совокупность взаимосвязанных трендов: семантики, ИИ, блокчейна, децентрализации, XR и повсеместной связности.</p>
+<p>Облачные вычисления изучены подробно: определение по ГОСТ ISO/IEC 17788-2016, модели обслуживания и развёртывания, направления развития (cloud-native, serverless, edge, облака для ИИ, суверенные облака) и состояние мирового и российского рынков. Облака являются инфраструктурной основой остальных трендов Web&nbsp;3.0, а противоречие между их централизацией и децентрализацией Web&nbsp;3.0 разрешается в гибридной модели.</p>
+<div class="note"><strong>Главное.</strong> Для социальных сетей наиболее важны три группы технологий: 1)&nbsp;облачные и граничные вычисления&nbsp;— без них невозможны масштабирование и доставка медиаконтента; 2)&nbsp;искусственный интеллект&nbsp;— от него зависят рекомендации, модерация и создание контента; 3)&nbsp;децентрализованные протоколы&nbsp;— они дают пользователю контроль над данными. Все три опираются на облачную инфраструктуру, что подтверждает её центральную роль в развитии Интернет-технологий.</div>
+</section>
+
+<!-- ================================================================ library -->
+<section id="library">
+<h2>Исследования, экспертные статьи и кейсы <a class="anchor" href="#library">#</a></h2>
+<p>Материалы для самостоятельного изучения темы. Все ссылки открываются в новой вкладке.</p>
+<div class="library">
+  <div class="col">
+    <h4>Исследования</h4>
+    <ul>
+      <li><a href="https://arxiv.org/abs/1902.03383" target="_blank" rel="noopener">Berkeley View on Serverless Computing</a> (Jonas et al., 2019)</li>
+      <li><a href="https://dl.acm.org/doi/10.1145/3694809.3700740" target="_blank" rel="noopener">Bluesky and the AT Protocol</a> (Kleppmann et al., 2024)</li>
+      <li><a href="https://arxiv.org/abs/1407.3561" target="_blank" rel="noopener">IPFS — Content Addressed P2P File System</a> (Benet, 2014)</li>
+      <li><a href="https://doi.org/10.6028/NIST.SP.800-145" target="_blank" rel="noopener">The NIST Definition of Cloud Computing</a> (2011)</li>
+      <li><a href="https://datareportal.com/reports/digital-2026-global-overview-report" target="_blank" rel="noopener">Digital 2026: Global Overview Report</a></li>
+    </ul>
+  </div>
+  <div class="col">
+    <h4>Экспертные статьи и аналитика</h4>
+    <ul>
+      <li><a href="https://www.srgresearch.com/articles/cloud-market-share-trends-big-three-together-hold-63-while-oracle-and-the-neoclouds-inch-higher" target="_blank" rel="noopener">Synergy Research: доли рынка облаков</a></li>
+      <li><a href="https://www.comnews.ru/content/242275/2025-11-12/2025-w46/1008/obem-rossiyskogo-oblachnogo-rynka-k-2030-g-pereydet-za-1-trln-rub" target="_blank" rel="noopener">ComNews: российский облачный рынок к 2030 г.</a></li>
+      <li><a href="https://servernews.ru/1132212" target="_blank" rel="noopener">ServerNews: оценка iKS-Consulting</a></li>
+      <li><a href="http://gavwood.com/dappsweb3.html" target="_blank" rel="noopener">Г. Вуд: «ĐApps: What Web 3.0 Looks Like»</a></li>
+      <li><a href="https://otus.ru/journal/vvedenie-v-cloud-computing-kak-rabotat-s-oblachnymi-servisami/" target="_blank" rel="noopener">OTUS: введение в облачные вычисления</a></li>
+    </ul>
+  </div>
+  <div class="col">
+    <h4>Практические кейсы</h4>
+    <ul>
+      <li><a href="https://www.usenix.org/conference/atc13/technical-sessions/presentation/bronson" target="_blank" rel="noopener">Facebook TAO: хранилище социального графа</a></li>
+      <li><a href="https://vk.company/ru/press/releases/12255/" target="_blank" rel="noopener">VK: итоги 2025 года и запуск MAX</a></li>
+      <li><a href="https://howwedoyacloud.mave.digital/" target="_blank" rel="noopener">Подкаст «Как мы делаем Yandex Cloud»</a></li>
+      <li><a href="https://www.w3.org/TR/activitypub/" target="_blank" rel="noopener">ActivityPub (W3C) — основа Mastodon</a></li>
+      <li><a href="https://rutube.ru/info/recommendations/" target="_blank" rel="noopener">RUTUBE: правила рекомендательных технологий</a></li>
+    </ul>
+  </div>
+</div>
+</section>
+
+<!-- ================================================================ refs -->
+<section id="refs">
+<h2>Список использованных источников <a class="anchor" href="#refs">#</a></h2>
+<ol class="refs">
+<li id="ref-1">Российская Федерация. Законы. Об информации, информационных технологиях и о защите информации : Федеральный закон №&nbsp;149-ФЗ. — Текст : электронный // КонсультантПлюс. — URL: <a href="https://www.consultant.ru/document/cons_doc_LAW_61798/" target="_blank" rel="noopener">https://www.consultant.ru/document/cons_doc_LAW_61798/</a> (дата обращения: 20.10.2026). <a class="back" href="#context">↩</a></li>
+<li id="ref-2">Российская Федерация. Законы. О персональных данных : Федеральный закон №&nbsp;152-ФЗ. — Текст : электронный // КонсультантПлюс. — URL: <a href="https://www.consultant.ru/document/cons_doc_LAW_61801/" target="_blank" rel="noopener">https://www.consultant.ru/document/cons_doc_LAW_61801/</a> (дата обращения: 20.10.2026). <a class="back" href="#context">↩</a></li>
+<li id="ref-3">Российская Федерация. Президент. О национальных целях развития Российской Федерации на период до 2030 года и на перспективу до 2036 года : Указ от 07.05.2024 №&nbsp;309. — Текст : электронный // КонсультантПлюс. — URL: <a href="https://www.consultant.ru/document/cons_doc_LAW_475991/" target="_blank" rel="noopener">https://www.consultant.ru/document/cons_doc_LAW_475991/</a> (дата обращения: 20.10.2026). <a class="back" href="#digital-economy">↩</a></li>
+<li id="ref-4">Программа «Цифровая экономика Российской Федерации» : утв. распоряжением Правительства РФ от 28.07.2017 №&nbsp;1632-р. — Текст : электронный // Правительство России. — URL: <a href="http://government.ru/docs/28653/" target="_blank" rel="noopener">http://government.ru/docs/28653/</a> (дата обращения: 20.10.2026). <a class="back" href="#digital-economy">↩</a></li>
+<li id="ref-5">ГОСТ ISO/IEC 17788–2016. Информационные технологии. Облачные вычисления. Общие положения и терминология : межгосударственный стандарт. — Москва : Стандартинформ, 2016. — Текст : непосредственный. <a class="back" href="#definition">↩</a></li>
+<li id="ref-6">Mell, P. The NIST Definition of Cloud Computing : NIST SP 800-145 / P. Mell, T. Grance. — Gaithersburg : NIST, 2011. — 7 p. — DOI: <a href="https://doi.org/10.6028/NIST.SP.800-145" target="_blank" rel="noopener">10.6028/NIST.SP.800-145</a>. <a class="back" href="#definition">↩</a></li>
+<li id="ref-7">A View of Cloud Computing / M. Armbrust, A. Fox, R. Griffith [et al.] // Communications of the ACM. — 2010. — Vol. 53, no. 4. — P. 50–58. — DOI: <a href="https://doi.org/10.1145/1721654.1721672" target="_blank" rel="noopener">10.1145/1721654.1721672</a>. <a class="back" href="#definition">↩</a></li>
+<li id="ref-8">Cloud Programming Simplified: A Berkeley View on Serverless Computing / E. Jonas, J. Schleier-Smith, V. Sreekanti [et al.]. — 2019. — arXiv:1902.03383. — URL: <a href="https://arxiv.org/abs/1902.03383" target="_blank" rel="noopener">https://arxiv.org/abs/1902.03383</a> (date of access: 20.10.2026). <a class="back" href="#directions">↩</a></li>
+<li id="ref-9">Edge Computing: Vision and Challenges / W. Shi, J. Cao, Q. Zhang [et al.] // IEEE Internet of Things Journal. — 2016. — Vol. 3, no. 5. — P. 637–646. <a class="back" href="#directions">↩</a></li>
+<li id="ref-10">Berners-Lee, T. The Semantic Web / T. Berners-Lee, J. Hendler, O. Lassila // Scientific American. — 2001. — Vol. 284, no. 5. — P. 34–43. <a class="back" href="#web3">↩</a></li>
+<li id="ref-11">Wood, G. ĐApps: What Web 3.0 Looks Like / G. Wood. — 2014. — URL: <a href="http://gavwood.com/dappsweb3.html" target="_blank" rel="noopener">http://gavwood.com/dappsweb3.html</a> (date of access: 20.10.2026). <a class="back" href="#web3">↩</a></li>
+<li id="ref-12">Шваб, К. Четвертая промышленная революция / К. Шваб. — Москва : Эксмо, 2016. — 208 с. — ISBN 978-5-699-90556-0. <a class="back" href="#industry40">↩</a></li>
+<li id="ref-13">Kagermann, H. Recommendations for implementing the strategic initiative INDUSTRIE 4.0 / H. Kagermann, W. Wahlster, J. Helbig. — Frankfurt am Main : acatech, 2013. <a class="back" href="#industry40">↩</a></li>
+<li id="ref-14">Benet, J. IPFS — Content Addressed, Versioned, P2P File System / J. Benet. — 2014. — arXiv:1407.3561. — URL: <a href="https://arxiv.org/abs/1407.3561" target="_blank" rel="noopener">https://arxiv.org/abs/1407.3561</a> (date of access: 20.10.2026). <a class="back" href="#decentral">↩</a></li>
+<li id="ref-15">ActivityPub : W3C Recommendation 23 January 2018 / C. Lemmer-Webber, J. Tallon, E. Shepherd [et al.] // W3C. — URL: <a href="https://www.w3.org/TR/activitypub/" target="_blank" rel="noopener">https://www.w3.org/TR/activitypub/</a> (date of access: 20.10.2026). <a class="back" href="#fediverse">↩</a></li>
+<li id="ref-16">Bluesky and the AT Protocol: Usable Decentralized Social Media / M. Kleppmann, P. Frazee, J. Gold [et al.] // DIN '24: Proceedings of the ACM CoNEXT-2024 Workshop. — New York : ACM, 2024. — P. 1–7. — DOI: <a href="https://doi.org/10.1145/3694809.3700740" target="_blank" rel="noopener">10.1145/3694809.3700740</a>. <a class="back" href="#fediverse">↩</a></li>
+<li id="ref-17">TAO: Facebook's Distributed Data Store for the Social Graph / N. Bronson, Z. Amsden, G. Cabrera [et al.] // USENIX ATC 13. — San Jose : USENIX, 2013. — P. 49–60. — URL: <a href="https://www.usenix.org/conference/atc13/technical-sessions/presentation/bronson" target="_blank" rel="noopener">usenix.org</a>. <a class="back" href="#architecture">↩</a></li>
+<li id="ref-18">Gartner Forecasts Worldwide Public Cloud End-User Spending to Total $723 Billion in 2025 : press release, 19 November 2024 // Gartner. — URL: <a href="https://www.gartner.com/en/newsroom/press-releases/2024-11-19-gartner-forecasts-worldwide-public-cloud-end-user-spending-to-total-723-billion-dollars-in-2025" target="_blank" rel="noopener">gartner.com</a> (date of access: 20.10.2026). <a class="back" href="#market">↩</a></li>
+<li id="ref-19">Cloud Market Share Trends — Big Three Together Hold 63% while Oracle and the Neoclouds Inch Higher // Synergy Research Group. — 2025. — 19 November. — URL: <a href="https://www.srgresearch.com/articles/cloud-market-share-trends-big-three-together-hold-63-while-oracle-and-the-neoclouds-inch-higher" target="_blank" rel="noopener">srgresearch.com</a> (date of access: 20.10.2026). <a class="back" href="#market">↩</a></li>
+<li id="ref-20">iKS-Consulting: российский рынок облачных сервисов вырастет в 2025 году до 416,5 млрд рублей // ServerNews. — URL: <a href="https://servernews.ru/1132212" target="_blank" rel="noopener">https://servernews.ru/1132212</a> (дата обращения: 20.10.2026). <a class="back" href="#market">↩</a></li>
+<li id="ref-21">Объем российского облачного рынка к 2030 г. перейдет за 1 трлн руб. // ComNews. — 2025. — 12 ноября. — URL: <a href="https://www.comnews.ru/content/242275/2025-11-12/2025-w46/1008/obem-rossiyskogo-oblachnogo-rynka-k-2030-g-pereydet-za-1-trln-rub" target="_blank" rel="noopener">comnews.ru</a> (дата обращения: 20.10.2026). <a class="back" href="#market">↩</a></li>
+<li id="ref-22">Kemp, S. Digital 2025: Global Overview Report // DataReportal. — 2025. — URL: <a href="https://datareportal.com/reports/digital-2025-global-overview-report" target="_blank" rel="noopener">datareportal.com</a> (date of access: 20.10.2026). <a class="back" href="#industry">↩</a></li>
+<li id="ref-23">Kemp, S. Digital 2026: Global Overview Report // DataReportal. — 2026. — URL: <a href="https://datareportal.com/reports/digital-2026-global-overview-report" target="_blank" rel="noopener">datareportal.com</a> (date of access: 20.10.2026). <a class="back" href="#industry">↩</a></li>
+<li id="ref-24">Kemp, S. Digital 2026 Mid-Year Global Update Report // DataReportal. — 2026. — URL: <a href="https://datareportal.com/reports/digital-2026-mid-year-global-update-report" target="_blank" rel="noopener">datareportal.com</a> (date of access: 20.10.2026). <a class="back" href="#industry">↩</a></li>
+<li id="ref-25">VK. Пресс-релиз по результатам за 4 кв. и 12 мес. 2025 // VK. — URL: <a href="https://vk.company/ru/press/releases/12255/" target="_blank" rel="noopener">https://vk.company/ru/press/releases/12255/</a> (дата обращения: 20.10.2026). <a class="back" href="#industry">↩</a></li>
+</ol>
+<p style="font:14px var(--sans);color:var(--muted)">Мультимедиа: видео встроены с RUTUBE и YouTube, аудио&nbsp;— подкаст «Как мы делаем Yandex Cloud» (mave.digital); фотографии&nbsp;— Wikimedia Commons (CC BY-SA 3.0). Права принадлежат их авторам.</p>
+</section>
+
+</article>
+</div>
+
+<footer>
+  Лонгрид подготовлен по материалам реферата «Основные направления развития современных Интернет-технологий»<br>
+  Мираз Абдулла · группа ИДМ-26-08 · МГТУ «СТАНКИН» · Интернет-технологии, лабораторная работа №&nbsp;3 · 2026
+</footer>
+
+<button id="totop" aria-label="Наверх">↑</button>
+<script src="https://cdn.jsdelivr.net/npm/motion@14.13.0/dist/motion.js"></script>
+<script src="assets/app.js"></script>
+</body>
+</html>
